@@ -22,7 +22,7 @@ def hello_world2():
        -6.37000000e+02,  1.39375780e-01, -1.43700000e+03, -4.76000000e+02,
        -9.74500000e+02, -6.61333333e+02]
 
-    return feature_array
+    return model.predict_proba([feature_array])
 
 @application.route('/predict', methods=['POST','GET'])
 def predict():
