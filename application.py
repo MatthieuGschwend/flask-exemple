@@ -15,7 +15,7 @@ def hello_world():
 def hello_world2():
     return 'okpath'
 
-@application.route('/predict', methods=['POST'])
+@application.route('/predict', methods=['POST','GET'])
 def predict():
 
  #getting an array of features from the post request's body
