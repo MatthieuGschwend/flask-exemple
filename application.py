@@ -1,7 +1,7 @@
-import pickle
+#import pickle
 import flask
 from flask import Flask, jsonify, request
-import numpy as np
+#import numpy as np
 #import xgboost
 app = flask.Flask(__name__) 
 #loading a model from a file called model.pkl
