@@ -11,6 +11,10 @@ model = pickle.load(open("model.pkl","rb"))
 def hello_world():
     return 'Sup. Suboerzo'
 
+@application.route('/okpath')
+def hello_world():
+    return 'okpath'
+
 @application.route('/predict', methods=['POST'])
 def predict():
 
@@ -24,4 +28,5 @@ def predict():
  response['predictions'] = model.predict_proba([feature_array]).tolist()
 
  #returning the response object as json
+    
  return flask.jsonify(response)
