@@ -13,6 +13,7 @@ def hello_world():
 
 @application.route('/okpath')
 def hello_world2():
+    model = pickle.load(open("model.pkl","rb"))
     feature_array = [ 1.00000000e+00,  0.00000000e+00,  0.00000000e+00,  2.00000000e+00,
         2.00000000e+00,  1.00000000e+00, -9.46100000e+03, -2.12000000e+03,
         0.00000000e+00,  0.00000000e+00,  1.00000000e+00, -1.13400000e+03,
