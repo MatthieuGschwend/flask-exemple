@@ -12,7 +12,7 @@ def hello_world():
     return 'Sup. Suboerzo'
 
 @application.route('/okpath')
-def hello_world():
+def hello_world2():
     return 'okpath'
 
 @application.route('/predict', methods=['POST'])
