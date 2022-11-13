@@ -43,6 +43,3 @@ def predict():
  return flask.jsonify(response)
  #return query_parameters['feature_array']
 
-
-if __name__ == "__main__":
- application.run(debug=True)
