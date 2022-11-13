@@ -17,7 +17,7 @@ def hello_world():
 def hello_world2():
     
 
-    return 'Sup. Suboerzo'
+    return str(type(model))
 
 @application.route('/predict', methods=['POST','GET'])
 def predict():
