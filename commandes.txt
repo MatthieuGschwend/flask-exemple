@@ -1,0 +1,9 @@
+conda create --prefix ./envs
+conda activate ./envs
+
+conda list --export > requirements.txt
+
+set FLASK_APP=application.py
+
+git init
+git status
