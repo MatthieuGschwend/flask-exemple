@@ -12,3 +12,10 @@ model =  pickle.load(open('model.pkl','rb'))
 @application.route('/')
 def hello_world():
     return 'Sup. Suboerzo'
+
+
+@application.route('/okpath')
+def hello_world2():
+    
+
+    return str(type(model))
