@@ -11,7 +11,7 @@ model =  pickle.load(open('model.pkl','rb'))
 
 @application.route('/')
 def hello_world():
-    return 'Sup. Suboerzo'
+    return 'Afficher simplement un message'
 
 
 @application.route('/okpath')
