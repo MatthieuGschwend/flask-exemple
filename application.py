@@ -18,7 +18,7 @@ def hello_world():
 def hello_world2():
     print('randomstr&')
     print(type(model))
-    return 'randomstr2'
+    return type(model)
 
 @application.route('/predict', methods=['POST','GET'])
 def predict():
