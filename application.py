@@ -16,7 +16,9 @@ def hello_world():
 
 @application.route('/okpath')
 def hello_world2():
-    return 'randomstr'
+    print('randomstr&')
+    print(type(model))
+    return 'randomstr2'
 
 @application.route('/predict', methods=['POST','GET'])
 def predict():
