@@ -4,23 +4,23 @@ import json
 from flask import Flask, jsonify, request
 import numpy as np
 import xgboost
-application = Flask(__name__)
+app = Flask(__name__)
 #loading a model from a file called model.pkl
 model =  pickle.load(open('model.pkl','rb'))
 #model.load_model("model.json")
 
-@application.route('/')
+@app.route('/')
 def hello_world():
     return 'Afficher simplement un message'
 
 
-@application.route('/okpath')
+@app.route('/okpath')
 def hello_world2():
     print('randomstr&')
     print(type(model))
     return type(model)
 
-@application.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST','GET'])
 def predict():
 
  #getting an array of features from the post request's body
