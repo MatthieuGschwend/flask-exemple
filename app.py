@@ -20,7 +20,7 @@ def hello_world2():
     print(type(model))
     return type(model)
 
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict')
 def predict():
 
  #getting an array of features from the post request's body
