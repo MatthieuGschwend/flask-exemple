@@ -6,7 +6,7 @@ import numpy as np
 import xgboost
 app = Flask(__name__)
 #loading a model from a file called model.pkl
-model =  pickle.load(open('model.pkl','rb'))
+model =  pickle.load(open('model2.pkl','rb'))
 #model.load_model("model.json")
 
 @app.route('/')
